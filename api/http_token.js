@@ -10,7 +10,7 @@ module.exports.post = async function (event) {
     let data = JSON.parse(event.body)
     var token = jwt.sign(data, PRIVATE_KEY, {
         subject: data.idCardNumber,
-        issuer: "คิวพร้อม.com",
+        issuer: "ทันตกรรมปลวกแดงคิวพร้อม.com",
         expiresIn: '30m'
     });
 
